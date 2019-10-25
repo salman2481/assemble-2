@@ -10,6 +10,12 @@ Call DumpRegs
 Xchg Eax,Ebx  
 Call DumpRegs  
 Call ReadInt
+Mov Eax,0h
+add Eax,10h
+Call DumpRegs
+Sub Eax, 10h
+Call DumpRegs
+Call ReadInt 
 Exit 
 main ENDP
 END main 
